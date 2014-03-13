@@ -2,12 +2,12 @@
 <!-- SPSWakeUP Sample Configuration File 
 # ====================================================================================
 # Description:	WarmUP Configuration file for SharePoint 2007, 2010 & 2013
-# FileName:		SPSWarmUP-INPUT.xml
-# Author:		Jean-Cyril DROUHIN
-# Date:			December 15, 2013
-# Version:		1.1
-# URL:			http://spswarmup.codeplex.com
-# Licence:		MS-PL
+# FileName:		  SPSWarmUP.xml
+# Author:		    Jean-Cyril DROUHIN
+# Date:			    March 13, 2014
+# Version:		  1.2
+# URL:			    http://spswarmup.codeplex.com
+# Licence:		  MS-PL
 # ====================================================================================
 Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the syntax of your file.
 -->
