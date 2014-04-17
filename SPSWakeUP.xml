@@ -2,17 +2,17 @@
 <!-- SPSWakeUP Sample Configuration File 
 # ====================================================================================
 # Description:	WarmUP Configuration file for SharePoint 2007, 2010 & 2013
-# FileName:		  SPSWarmUP.xml
-# Author:		    Jean-Cyril DROUHIN
-# Date:			    March 14, 2014
-# Version:		  1.3
-# URL:			    http://spswarmup.codeplex.com
-# Licence:		  MS-PL
+# FileName:		SPSWarmUP.xml
+# Author:		Jean-Cyril DROUHIN
+# Date:			Avril 1-, 2014
+# Version:		1.4
+# URL:			http://spswarmup.codeplex.com
+# Licence:		MS-PL
 # ====================================================================================
 Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the syntax of your file.
 -->
-<Configuration Version="1.1">
-	<!-- This settings section helps to configure Windows OS and Internet Explorer to permit access web URL in a local context 
+<Configuration Version="1.4">
+  <!-- This settings section helps to configure Windows OS and Internet Explorer to permit access web URL in a local context 
 	For security reason, you can restore the original file and settings by settings RestoreDefault in false value -->
   <Settings RestoreDefault="false">
     <!-- Disables network loopback checks. This prevents the OS blocking access to your server under names other than its actual host name -->
@@ -25,10 +25,15 @@ Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the
     <IncludeCentralAdmin>true</IncludeCentralAdmin>
   </Settings>
 
-    <!--- This CustomUrls section add urls to be warming up.
-    -->
-    <CustomUrls>
-      <CustomUrl>http://intranet/SitePages/utilities.aspx</CustomUrl>
-      <CustomUrl>http://intranet/SitePages/pagenotfound.aspx</CustomUrl>
-    </CustomUrls>
+  <!--- This CustomUrls section add urls to be warming up.-->
+  <CustomUrls>
+    <CustomUrl>http://intranet/sites/spswakeup1/home.aspx</CustomUrl>
+    <CustomUrl>http://intranet/sites/spswakeup2/home.aspx</CustomUrl>
+  </CustomUrls>
+
+  <!--- This ExcludeUrls section remove site collection urls to be warming up.-->
+  <ExcludeUrls>
+    <ExcludeUrl>http://intranet/search</ExcludeUrl>
+    <ExcludeUrl>http://intranet/sites/Admin</ExcludeUrl>
+  </ExcludeUrls>
 </Configuration>
