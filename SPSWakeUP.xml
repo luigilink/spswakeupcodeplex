@@ -4,14 +4,14 @@
 # Description:	WarmUP Configuration file for SharePoint 2007, 2010 & 2013
 # FileName:		SPSWarmUP.xml
 # Author:		Jean-Cyril DROUHIN
-# Date:			February 17, 2015
-# Version:		1.9
+#	Date:		March 03, 2015
+#	Version:	1.8.2
 # URL:			http://spswarmup.codeplex.com
 # Licence:		MS-PL
 # ====================================================================================
 Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the syntax of your file.
 -->
-<Configuration Version="1.9">
+<Configuration Version="1.8">
 	<!-- This settings section helps to configure Windows OS and Internet Explorer to permit access web URL in a local context -->
 	<Settings>
 		<!-- Disables network loopback checks. This prevents the OS blocking access to your server under names other than its actual host name -->
@@ -25,7 +25,7 @@ Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the
 		<!-- Include Central Administration Url in WarmUp -->
 		<IncludeCentralAdmin>true</IncludeCentralAdmin>
 		<!-- Use internet explorer for WarmUp -->
-		<UseIEforWarmUp>true</UseIEforWarmUp>
+		<UseIEforWarmUp>false</UseIEforWarmUp>
 	<!-- This section helps to configure the retention of log files -->
 	<CleanLogs Enable="true">
 			<!-- Number of Days for keeping Logs Files -->
