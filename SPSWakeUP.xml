@@ -4,8 +4,8 @@
 # Description:	WarmUP Configuration file for SharePoint 2007, 2010 & 2013
 # FileName:		SPSWarmUP.xml
 # Author:		Jean-Cyril DROUHIN
-#	Date:		March 04, 2015
-#	Version:	1.9
+#	Date:		April 14, 2015
+#	Version:	1.9.1
 # URL:			http://spswarmup.codeplex.com
 # Licence:		MS-PL
 # ====================================================================================
@@ -20,7 +20,8 @@ Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the
   <!-- This settings section helps to configure Windows OS and Internet Explorer to permit access web URL in a local context -->
   <Settings>
     <!-- Disables network loopback checks. This prevents the OS blocking access to your server under names other than its actual host name -->
-    <DisableLoopbackCheck>true</DisableLoopbackCheck>
+    <!-- Set to secure for BackConnectionHostNames or true for standard DisableLoopbackCheck (less secure)-->
+    <DisableLoopbackCheck>secure</DisableLoopbackCheck>
     <!-- Add URL of Web Application in HOSTS system file -->
     <AddURLsToHOSTS>true</AddURLsToHOSTS>
     <!-- Add URL of Web Application in Intranet security zone -->
