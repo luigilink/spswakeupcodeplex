@@ -4,15 +4,15 @@
 # Description:	WarmUP Configuration file for SharePoint 2007, 2010 & 2013
 # FileName:		SPSWarmUP.xml
 # Author:		Jean-Cyril DROUHIN
-#	Date:		April 14, 2015
-#	Version:	1.9.1
+#	Date:		May 26, 2015
+#	Version:	1.9.2
 # URL:			http://spswarmup.codeplex.com
 # Licence:		MS-PL
 # ====================================================================================
 Use a validator like http://www.w3schools.com/xml/xml_validator.asp to check the syntax of your file.
 -->
 <Configuration Version="1.9">
-  <!-- This section helps to install this script in a new Sheduled Task -->
+  <!-- This section helps to install this script in a new Scheduled Task -->
   <Install Enable="true">
     <!-- Service Account Used for running the Scheduled Task -->
     <ServiceAccount>CONTOSO\svc_sp_farmsetup</ServiceAccount>
